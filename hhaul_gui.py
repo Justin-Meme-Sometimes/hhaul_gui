@@ -16,10 +16,10 @@ MAX_HISTORY = 8
 
 # Label → destination name sent to /dispatch
 LOCATIONS = {
-    "A": "Entrance",
-    "B": "Lab 1",
-    "C": "Lab 2",
-    "D": "Office",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
 }
 
 # Destination name → (x_fraction, y_fraction) position on the map canvas (0–1)
@@ -60,11 +60,6 @@ class HHaulGUI:
             bg="#1a1a1a", fg="white",
             font=("Helvetica", 15, "bold")
         ).place(x=16, rely=0.5, anchor="w")
-        tk.Label(
-            header, text="Dispatch Control",
-            bg="#1a1a1a", fg="#888888",
-            font=("Helvetica", 10)
-        ).place(x=175, rely=0.5, anchor="w")
 
         # --- Pi URL ---
         url_frame = tk.LabelFrame(
